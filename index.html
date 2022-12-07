@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CaPITULO 4</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="index2.css">
+</head>
+<body>
+    <h1>LAS TRES DIVISIONES</h1>
+    <a href="index2.html">CAPITULO 5</a>
+<hr>
+<h2>RESUMEN</h2>
+<p>
+Días después de iniciado el largo viaje hacia Bagdad, se encontraron un señor casi muerto con sus ropas harapientas y destrozadas, se llamaba Salem un
+comerciante acaudalado que había sido asaltado por un grupo de hombres persas, de su caravana, él fue el único que sobrevivió a ese ataque. El comerciante
+les pidió algo de comida ya que llevaba muchos días varado en el desierto y sin poder comer nada, Beremiz le contestó que tenía consigo 5 panes y el Bagdadí
+tenía 3 panes; Salem les prometió que si compartían los panes que llevaban con ellos al llegar a Bagdad les pagaría 8 monedas de oro, es decir, una moneda
+de oro por cada pan.
+<br>
+<br>
+
+Una vez, llegaron a Bagdad, Salem empezó a cumplir la promesa realizada, y le dio 5 monedas de oro a Beremiz y 3 monedas al Bagdadí, pero el hombre que 
+calculaba, dijo que no le parecía correcta la división ya que le dijo al comerciante que a él le correspondía 7 monedas y a su amiga una sola moneda.
+<br>
+<br>
+
+El negociante impresionado y sin palabras no entendía porque de esta aseveración de Beremiz, y por qué quería recibir más monedas que la cantidad de 
+panes que había compartido. Beremiz procedió a explicar la manera justa de la repartición “yo di 5 panes cada vez que nos daba hambre, yo sacaba un pan
+de mi bolso y lo partía en tres partes por lo que yo di 15 pedazos, mientras que mi amigo bagdadí dio 3 panes por lo tanto el dio 9 pedazos sumando en
+total 24 pedazos de pan.
+<br>    
+<br>
+De los 15 que yo puse me comí 8 por lo que realmente aporte 7 y mi amigo de la misma manera se comió 8 pedazos de manera que aportó solo 1. Así que yo 
+aporte 7 y mi amigo 1 da en total 8 panes, es por esto que yo debería recibir 7 monedas de oro y mi amigo solo 1 moneda”.
+<br>
+<br>    
+Salem lo pensó un rato, procedió a felicitar a Beremiz y aceptó la explicación del hombre que calculaba, dando la orden de pagarle 7 monedas de oro a 
+Beremiz y 1 moneda de oro al Bagdadí, sin embargo el hombre que calculaba se sintió inconforme con la división, tomó las 8 monedas y las dividió a la mitad,
+tomando él una y la otra se la dio a su amigo. Este gesto le pareció noble al comerciante por lo que le ofreció a Beremiz trabajo como su secretario o 
+ayudante personal.
+</p>
+
+<br>
+
+<div align="center"><img src="p11.jpg"></div>
+<hr>
+<br>
+<h2>EJERCICIO JAVASCRIPT</h2>
+<pre>
+
+  function myFuntion(){
+    var x,y,p1,p2;
+    x = document.getElementById("num1").value;
+    y = document.getElementById("num2").value;
+    p1 = x*3;
+    p2 = y*3;
+    text = "Es necesesario introducir dos numeross válidos";
+    p3=(parseFloat(p1)+parseFloat((p2))/3);
+    p1=p1-p3;
+    p2=p2-p3
+    document.getElementById("p1").innerHTML = p1;
+    document.getElementById("p2").innerHTML = p2;
+  }
+
+</pre>
+<div class="respuesta">
+  <label >Introducir los siguientes valores</label>
+  <br>
+  <input type="text" id=a placeholder="num1">
+  <input type="text" id=b placeholder="num2">
+  <button onclick="raices()">ENTER</button>
+  <h2>Respuesta</h2>
+  <div id="raiz"></div>
+</div>
+
+<script src="desafio.js"></script>
+</body>
+</html>

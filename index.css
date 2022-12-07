@@ -1,0 +1,13 @@
+body{
+    background-color: seagreen;
+    font-size: 25px;
+    margin: 15px;
+}
+img{
+   display: inline-flex;
+   align-items: center;
+}
+h1, h2{
+    text-align: center;
+    color: #000;
+}

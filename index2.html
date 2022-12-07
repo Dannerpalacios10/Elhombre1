@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CapITULO 5</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="index2.css">
+</head>
+<body>
+ <h1>TRES FORMAS DE CALCULAR UNA PORCION</h1>
+ <hr>
+ <h2>RESUMEN</h2>  
+<p>
+Una vez llegaron a la ciudad Bagdad, los dos amigos fueron a una posada y se encontraron nuevamente con otro problema que demandaba de la gran ayuda del 
+hombre que calculaba.El problema planteado era el siguiente.: un negociante de joyas y prendas preciosas, convino con el propietario de la posada pagarle
+al finalizar su estancia, pero estableció los siguientes precios; si lograba vender sus joyas en 100 dracimas; le pagaría por el hospedaje unos 20 
+dracimas; pero si las vendía a 200 dracimas, pagaría entonces 35 dracimas.
+<br>
+<br>
+Al final el joyero vendió sus joyas y prendas en un monto de 140 dracimas, y por lo que decía que debía de pagar solo 24 dracimas, mientras que el propietario 
+de la posada decía que debía pagarle 28 dracimas. De manera que, el hombre calculaba se ofreció a plantarles una solución, entre 100 dracimas a 200 dracimas 
+hay una diferencia de 100 dracimas, y entre 35 y 20 dracimas hay 15 dracimas, por lo a cada 40 dracimas le corresponde 6 dracimas, así que por 140 dracimas 
+debería pagar la cantidad de 26 dracimas; el joyero y el propietario de la posada quedaron conformes con los cálculos de Beremiz dando por culminado su disputa,
+así que el joyero como una forma de agradecimiento al hombre que calculaba le regaló un anillo como presente.
+</p>   
+
+<br>
+<div align="center"><img src="p2.jpg"></div>
+<hr>
+<br>
+<h2>EJERCICIO JAVASCRIPT</h2>
+
+<pre>
+    function raices(){
+        var a = parseInt( document.getElementById("a").value);
+        var b = parseInt( document.getElementById("b").value);
+        var c = parseInt( document.getElementById("c").value);
+        var d=Math.pow(b,2)-(4*a*c);
+    
+        if (d==0)
+        {
+            document.getElementById('raiz').innerHTML="discriminante d = "+ d +" la ecuacion tiene 1 raiz"
+        }
+        else if(d>0) 
+        {
+            document.getElementById('raiz').innerHTML="discriminante d = "+ d +" la ecuacion tiene 1 raiz"
+        }
+        else{
+            document.getElementById('raiz').innerHTML="discriminante d = "+ d +" la ecuacion tiene 1 raiz"
+        }   
+        }
+</pre>
+<div class="respuesta">
+    <label >Introducir los siguientes valores</label>
+    <br>
+    <input type="text" id=a placeholder="valor de a">
+    <input type="text" id=b placeholder="valor de b">
+    <input type="text" id=c placeholder="valor de c">
+    <button onclick="raices()">ENTER</button>
+    <h2>Respuesta</h2>
+    <div id="raiz"></div>
+</div>
+  
+<script src="desafio.js"></script>
+</body>
+</html>
